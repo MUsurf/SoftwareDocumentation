@@ -3,9 +3,8 @@
 Welcome to the **SURF Software Weekly Updates**! This repository is used to track the progress of software within SURF and act as a knowledge base for future use.
 
 ## 📌 Latest Weekly Reports
-- [Team 808 Ros3 Weekly Update - [3-11]](Spring-2025/Week-1/group-808-week-1.md)
-- [Team 404 Ros2 Weekly Update - [3-11]](Spring-2025/Week-1/group-404-week-1.md)
-\n
+- [Team Photon Ros2 Weekly Update - 3/11](Spring-2025/Week-1/group-404-week-1.md)
+
 ## 📌 Purpose
 Each week, teams should commit a write-up including:
 - **Members**: Who contributed to this week's work?
