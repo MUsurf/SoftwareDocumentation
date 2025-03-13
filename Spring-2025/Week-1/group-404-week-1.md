@@ -4,21 +4,26 @@
 - Harrison Surma
 - Zoe Strassner
 - Macie Hoff
+- Tom Winterton
 
 ## 🏆 Accomplishments
-- What was completed this week.
+- Committed a working convex orange detection ros2 package
 
 ## 🚧 Challenges
-- What issues did we run into?
+- Setting up a custom Ros2 publisher class.
+- Docker container from `MUSURF/containerization` wasn't building.
 
 ## 🛠 Solutions
-- How were issues resolved?
+- Ros2 custom publishers are not possible purely in python.
+- Docker container's package imports from `MUSURF/TapeWorm` were incorrectly identified due to a commit with new folder names.
+    - Manually changing the DOCKERFILE in containerization fixed the build. 
 
 ## 📚 Resources
-- Relevant resources like links, repositories, articles, documentation.
+- [Python Custom Messages](https://robotics.stackexchange.com/questions/114128/ros2-jazzy-python-custom-messages)
 
 ## 🎯 Next Week’s Goals
-- What is next week, make it a good place to look at to start Tuesday.
+- Start a ROS2 Package for Hydrophones.
+- Better follow Docker best practices.
 
 ## 🔍 Additional Notes
-- Any details that don't fit elsewhere.
+- 
