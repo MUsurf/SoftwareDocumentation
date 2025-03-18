@@ -1,4 +1,4 @@
-# [Team Name] [Team Focus] Weekly Update - [Date]
+# [Motors] [Motor control and PIDs] Weekly Update - [3/18/2025]
 
 ## 👥 Members
 - Andrew
@@ -16,7 +16,7 @@
 - How to map nonlinear velocity in FF :(
 
 ## 🛠 Solutions
-- How were issues resolved?
+- Mainly we discuss why each different opinion and solution works or doesn't work and then andrew decides what to do.
 
 ## 📚 Resources
 - https://engineering.missouri.edu/faculty/craig-kluever/ The person to email regarding non linear FF
