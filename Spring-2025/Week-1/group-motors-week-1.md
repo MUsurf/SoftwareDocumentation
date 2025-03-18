@@ -1,4 +1,4 @@
-# [Motors] [Motor control and PIDs] Weekly Update - [3/18/2025]
+# Team Motors Weekly Update - 3/11
 
 ## 👥 Members
 - Andrew
