@@ -3,6 +3,7 @@
 Welcome to the **SURF Software Weekly Updates**! This repository is used to track the progress of software within SURF and act as a knowledge base for future use.
 
 ## 📌 Latest Weekly Reports
+- [Team Webdev Weekly Update - 3/18](Spring-2025/Week-2/group-webdev-week-2.md)
 - [Team Motors Weekly Update - 3/11](Spring-2025/Week-1/group-motors-week-1.md)
 - [Team Photon Ros2 Weekly Update - 3/11](Spring-2025/Week-1/group-404-week-1.md)
 
