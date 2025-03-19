@@ -4,6 +4,7 @@ Welcome to the **SURF Software Weekly Updates**! This repository is used to trac
 
 ## 📌 Latest Weekly Reports
 - [Team Webdev Weekly Update - 3/18](Spring-2025/Week-2/group-webdev-week-2.md)
+- [Photon Ros Package Weekly Update - [3/18]](Spring-2025/Week-2/group-photon-week-2.md)
 - [Team Motors Weekly Update - 3/11](Spring-2025/Week-1/group-motors-week-1.md)
 - [Team Photon Ros2 Weekly Update - 3/11](Spring-2025/Week-1/group-404-week-1.md)
 
