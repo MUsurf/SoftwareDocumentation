@@ -43,4 +43,6 @@ This repository includes an automation that adds the next weeks folder every mon
 
 ## TODO
 - Fix Hardcoded Top Level Folder Name In Automations
+- Fix Always Creates New Week Folder
+    - Wanted Implementation: Only Create If Last Week Has Markdown
 - ~~Prettier Automated Index By Grabbing First Line From File As Link Text~~

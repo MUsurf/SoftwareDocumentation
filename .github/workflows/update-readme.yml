@@ -16,17 +16,18 @@ jobs:
 
       - name: Generate Weekly Reports List
         run: |
-          echo "## 📌 Latest Weekly Reports" > latest_reports.md
-          find Spring-2025 -type f -name "*.md" | sort -r | while read file; do
+            echo "## 📌 Latest Weekly Reports" > latest_reports.md
+            LAST_WEEK=$(find Spring-2025 -type d -name "Week-*" | sort -V | tail -n1 | awk '{print $NF}')
+            find "$LAST_WEEK" -type f -name "*.md" | sort -r | while read file; do
             TITLE=$(awk 'NR==1{sub(/^# /, ""); print; exit}' "$file" | sed 's/^ *//;s/ *$//')
             [ -z "$TITLE" ] && TITLE="$file"
             echo "- [${TITLE}](${file})" >> latest_reports.md
-          done
+            done
             echo "" >> latest_reports.md
-          awk '/## 📌 Latest Weekly Reports/{exit} {print}' README.md > temp_start.md
-          awk '/## 📌 Purpose/{flag=1} flag' README.md >> temp_end.md
-          cat temp_start.md latest_reports.md temp_end.md > README.md
-          rm temp_start.md temp_end.md latest_reports.md
+            awk '/## 📌 Latest Weekly Reports/{exit} {print}' README.md > temp_start.md
+            awk '/## 📌 Purpose/{flag=1} flag' README.md >> temp_end.md
+            cat temp_start.md latest_reports.md temp_end.md > README.md
+            rm temp_start.md temp_end.md latest_reports.md
 
       - name: Commit and push changes
         run: |
@@ -44,12 +45,17 @@ jobs:
 
       - name: Create next week's folder if needed
         run: |
-          LAST_WEEK=$(find Spring-2025 -type d -name "Week-*" | sort -V | tail -n1 | awk '{print $NF}')
-          NEXT_WEEK=$((LAST_WEEK + 1))
-          if [ -n "$(ls -A "Spring-2025/Week-$LAST_WEEK"/*.md 2>/dev/null)" ]; then
-            mkdir -p "Spring-2025/Week-$NEXT_WEEK"
-            git add "Spring-2025/Week-$NEXT_WEEK"
-          fi
+            LAST_WEEK=$(find Spring-2025 -type d -name "Week-*" | sort -V | tail -n1 | awk '{print $NF}')
+            WEEK_NUMBER=$(echo "$LAST_WEEK" | grep -oP '(?<=Week-)\d+')
+            echo "Last week: $LAST_WEEK"
+            echo "Week number: $WEEK_NUMBER"
+            NEXT_WEEK_NUMBER=$((WEEK_NUMBER + 1))
+            NEXT_WEEK="Week-$NEXT_WEEK_NUMBER"
+            if [ -z "$(ls -A "Spring-2025/$LAST_WEEK/*.md" 2>/dev/null)" ]; then
+              mkdir -p "Spring-2025/$NEXT_WEEK"
+              touch "Spring-2025/$NEXT_WEEK/.gitkeep"
+              git add "Spring-2025/$NEXT_WEEK"
+            fi
 
       - name: Commit and push new week folder
         run: |
