@@ -34,7 +34,11 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add README.md
-          git diff --cached --quiet || (git commit -m "Auto-update README with latest reports" && git push)
+          if git diff --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update README with latest reports" && git push
+          fi
 
   create-next-week-folder:
     runs-on: ubuntu-latest
@@ -51,7 +55,7 @@ jobs:
             echo "Week number: $WEEK_NUMBER"
             NEXT_WEEK_NUMBER=$((WEEK_NUMBER + 1))
             NEXT_WEEK="Week-$NEXT_WEEK_NUMBER"
-            if [ -z "$(ls -A "Spring-2025/$LAST_WEEK/*.md" 2>/dev/null)" ]; then
+            if ls "$LAST_WEEK"/*.md 1> /dev/null 2>&1; then
               mkdir -p "Spring-2025/$NEXT_WEEK"
               touch "Spring-2025/$NEXT_WEEK/.gitkeep"
               git add "Spring-2025/$NEXT_WEEK"
@@ -61,4 +65,8 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git diff --cached --quiet || (git commit -m "Create folder for Week $NEXT_WEEK" && git push)
+          if git diff --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Create folder for Week $NEXT_WEEK" && git push
+          fi
