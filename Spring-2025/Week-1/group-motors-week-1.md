@@ -1,11 +1,11 @@
 # Team Motors Weekly Update - 3/11
 
 ## 👥 Members
-- Andrew
-- Charles
-- Elijah
-- Max
-- Raquel
+- Andrew Culbertson
+- Charles Bacher
+- Elijah VanDyne
+- Max Welge
+- Raquel Fellman
 
 ## 🏆 Accomplishments
 - Discussed velocity control implementation.
