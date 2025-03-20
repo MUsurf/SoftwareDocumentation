@@ -16,7 +16,7 @@
 - How to map nonlinear velocity in FF :(
 
 ## 🛠 Solutions
-- Mainly we discuss why each different opinion and solution works or doesn't work and then andrew decides what to do.
+- Using a position -> velocity -> thrust system rather than just position -> thrust to account for nonlinearity in velocity to thrust.
 
 ## 📚 Resources
 - https://engineering.missouri.edu/faculty/craig-kluever/ The person to email regarding non linear FF
