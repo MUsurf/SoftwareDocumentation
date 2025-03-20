@@ -6,6 +6,7 @@ Welcome to the **SURF Software Weekly Updates**! This repository is used to trac
 - [Team Webdev Weekly Update - 3/18](Spring-2025/Week-2/group-webdev-week-2.md)
 - [Sim Weekly Update - 03/20/2025](Spring-2025/Week-2/group-sim-week-2.md)
 - [Photon Ros Package Weekly Update - [3/18]](Spring-2025/Week-2/group-photon-week-2.md)
+- [Team Motors Weekly Update - 3/18](Spring-2025/Week-2/group-motors-week-2.md)
 
 ## 📌 Purpose
 Each week, teams should commit a write-up including:
