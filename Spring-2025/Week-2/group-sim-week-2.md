@@ -8,6 +8,7 @@
 - Finished camera cone scan simulation
 - Began work on Multiplayer
 - Implemented a fun explosion for obstacle collisions
+- Began Documentation of sim and explaining the code to the normies (motor team)
 
 ## 🚧 Challenges
 - Finding a solution for peer-to-peer multiplayer that doesn't require port-forwarding

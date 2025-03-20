@@ -24,4 +24,4 @@
 - Teach sim
 
 ## 🔍 Additional Notes
-- :)
+- :(
