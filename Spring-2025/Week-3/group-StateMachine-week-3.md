@@ -2,21 +2,33 @@
 
 ## 👥 Members
 - Andrew Culbertson
+- Charles Bacher
+- Raquel Fellman
+- Max Welch
+- Zoe Strassner
+- Elijah VanDyne
+- Kaden Culbertson
+- Harry SomethingWithAnS
+- Chris 
+- Macie 
 
 ## 🏆 Accomplishments
-- What was completed this week.
+- Started discussions on the state machine.
+- Created an initial diagram for the state machine, tasks, and image processing.
 
 ## 🚧 Challenges
-- What issues did we run into?
+- 
 
 ## 🛠 Solutions
-- How were issues resolved?
+- 
 
 ## 📚 Resources
-- Relevant resources like links, repositories, articles, documentation.
+- (I think the link works idk) https://app.diagrams.net/#G1K-_OLwYVlFx8v0XepHUBJz2EnbRL6MF2#%7B%22pageId%22%3A%22ZPf1p-95Dl-G6NqpWSGb%22%7D
 
 ## 🎯 Next Week’s Goals
-- What is next week, make it a good place to look at to start Tuesday.
+- Define the API for inputs and outputs to the state machine. 
+- Start working on the code for tasks.
+- Start defining the general structure in code.
 
 ## 🔍 Additional Notes
-- Any details that don't fit elsewhere.
+- Diagrams are in the Software channel on discord
