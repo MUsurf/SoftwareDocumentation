@@ -1,7 +1,7 @@
-# [Team Name] [Team Focus] Weekly Update - [Date]
+# Team State Machine Weekly Update - 4/1
 
 ## 👥 Members
-- Names of everyone who contributed.
+- Andrew Culbertson
 
 ## 🏆 Accomplishments
 - What was completed this week.
