@@ -10,6 +10,7 @@
 
 ## 🏆 Accomplishments
 - Started repository for state machine ROS package.
+- Worked out pseudo code for tasks
 - https://github.com/MUsurf/TapeWorm/tree/state_machine
 
 ## 🚧 Challenges
