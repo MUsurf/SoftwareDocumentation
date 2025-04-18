@@ -13,13 +13,38 @@
 - Defined states for Collecting Data Task
 - Defined states for Navigate the Channel Task
 - Reviewed Handbook
+- Enumerating State Machine Workings
+    - Have supervisor on top of highest level state machine
+    - Supervisor double checks the output actions don't violate planes
 
 ## 🚧 Challenges
 - Lack of clarity on task responsibilities
 - Deciding Scope of State Machine
+- Deciding between states taking purely finite steps or continuous actions
+    - Purely Finite: A finished state just represents the next step is chosen and states heavily iterate
+    - Continuous: A finished state represents a finished task. Error handling is far more self-reliant
+        - Don't let the sub try and pass the 4 planes.
+        - If sub tries to leave the 4 planes remove the vector movement towards the disallowed plane and allow remaining vector
+- Use camera to try and derive if near a wall or not, slow if not sure near a wall
+    - Heuristic for wall? (If center vertical slice is only walls then at a wall)
+    - Depth sensor for sure defines the top and bottom planes
+- How do we interact with Motors?
+- How do we ever get absolute positioning? Calc!!!
 
 ## 🛠 Solutions
--
+- PIDs are used for the motors
+    - Enter a position, measurement, set_point, opt velocity (override position), opt thrust (override velocity)
+    - IMU can be used for position & angle
+    - Measurement: Where you are
+    - Set_Point: Where you want to be
+    - Position: Hold Location (good for raw, pitch, roll)
+    - Velocity: Hold Velocity (good for movement x, y, z)
+    - Use Velocity to aim for a task and then hold position when at a good spot
+- Provided two depths and the getting the angle of a pixel in a camera from the dead center of the camera
+    - Sub is a guaranteed absolute depth from depth sensor
+    - Lower sub to line up vertical center of camera with wanted item
+    - Record depth
+    - Rise back to any give depth and determine location with camera angle
 
 ## 📚 Resources
 - [Team Handbook](https://robonation.gitbook.io/robosub-resources/section-3-autonomy-challenge/3.2-task-descriptions)
